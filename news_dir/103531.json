@@ -1,0 +1,133 @@
+{
+  "status": {
+    "success": true,
+    "code": 200,
+    "description": "Action Successful",
+    "cached_on": "2024-09-19 12:46:05"
+  },
+  "data": [
+    {
+      "id": 103530,
+      "titleSi": "SL vs NZ 1st TEST: ශ්‍රී ලංකා පළමු ඉනිම ලකුණු 305 කට සීමාවෙයි",
+      "titleEn": "SL vs NZ 1st TEST: Sri Lanka are limited to 305 runs in the first innings",
+      "contentSi": [
+        {
+          "type": "text",
+          "data": "සංචාරක නවසීලන්ත කණ්ඩායම හා ශ්‍රී ලංකා කණ්ඩායම සමඟ පැවැත්වෙන පළමු ටෙස්ට් තරගයේ දෙවන දිනය අදයි.",
+          "options": {
+            "size": "normal",
+            "alingment": "left",
+            "is_quote": false
+          }
+        },
+        {
+          "type": "text",
+          "data": "​ඒ අනුව සිය පළමු ඉනිම සඳහා පන්දුවට පහරදුන් ශ්‍රී ලංකා කණ්ඩායම සියලු දෙනා දැවී ලකුණු 305 ක් රැස් කිරීමට සමත් වුණා.",
+          "options": {
+            "size": "normal",
+            "alingment": "left",
+            "is_quote": false
+          }
+        },
+        {
+          "type": "text",
+          "data": "පන්දුවට පහරදීමේදී ශ්‍රී ලංකා කණ්ඩායම වෙනුවෙන් කමිඳු මෙන්ඩිස් ලකුණු 114 ක්, කුසල් මෙන්ඩිස් ලකුණු 50 ක්, ඇන්ජලෝ මැතිව්ස් ලකුණු 36 ක් හා දිනේෂ් චන්දිමාල් ලකුණු 30 ක් ලබා ගත්තා.",
+          "options": {
+            "size": "normal",
+            "alingment": "left",
+            "is_quote": false
+          }
+        },
+        {
+          "type": "text",
+          "data": "ලකුණු පුවරුව පහතින්. ",
+          "options": {
+            "size": "normal",
+            "alingment": "left",
+            "is_quote": false
+          }
+        },
+        {
+          "type": "image",
+          "data": "https://helakuru.sgp1.cdn.digitaloceanspaces.com/esana/images/66ebba0c53fad.jpeg"
+        },
+        {
+          "type": "image",
+          "data": "https://helakuru.sgp1.cdn.digitaloceanspaces.com/esana/images/66ebba0c63087.jpeg"
+        },
+        {
+          "type": "image",
+          "data": "https://helakuru.bhashalanka.com/esana-hit-tracker.png?v=103530"
+        }
+      ],
+      "contentEn": [
+        {
+          "type": "text",
+          "data": "Today is the second day of the first Test match between the touring New Zealand team and the Sri Lankan team.",
+          "options": {
+            "size": "normal",
+            "alingment": "left",
+            "is_quote": false
+          }
+        },
+        {
+          "type": "text",
+          "data": "Accordingly, the Sri Lankan team batted for their first innings and managed to score 305 runs.",
+          "options": {
+            "size": "normal",
+            "alingment": "left",
+            "is_quote": false
+          }
+        },
+        {
+          "type": "text",
+          "data": "In batting, Kamindu Mendis scored 114 runs, Kusal Mendis scored 50 runs, Angelo Mathews scored 36 runs and Dinesh Chandimal scored 30 runs.",
+          "options": {
+            "size": "normal",
+            "alingment": "left",
+            "is_quote": false
+          }
+        },
+        {
+          "type": "text",
+          "data": "Below is the scoreboard.",
+          "options": {
+            "size": "normal",
+            "alingment": "left",
+            "is_quote": false
+          }
+        },
+        {
+          "type": "image",
+          "data": "https://helakuru.sgp1.cdn.digitaloceanspaces.com/esana/images/66ebba0e40fbd.jpeg"
+        },
+        {
+          "type": "image",
+          "data": "https://helakuru.sgp1.cdn.digitaloceanspaces.com/esana/images/66ebba0e5e66d.jpeg"
+        },
+        {
+          "type": "image",
+          "data": "https://helakuru.bhashalanka.com/esana-hit-tracker.png?v=103530"
+        }
+      ],
+      "category": 2,
+      "thumb": "https://helakuru.sgp1.cdn.digitaloceanspaces.com/esana/images/lib/sl-vs-nz-1st-test.jpg",
+      "cover": "https://helakuru.sgp1.cdn.digitaloceanspaces.com/esana/images/lib/sl-vs-nz-1st-test.jpg",
+      "reactions": {
+        "like": 4,
+        "love": 12,
+        "haha": 0,
+        "wow": 1,
+        "sad": 0,
+        "angry": 1
+      },
+      "comments": 14,
+      "commentCounts": {
+        "sin": 14,
+        "eng": 0
+      },
+      "published": "2024-09-19 11:13:45",
+      "share_url": "https://www.helakuru.lk/esana/p/103530/"
+    }
+  ]
+}
