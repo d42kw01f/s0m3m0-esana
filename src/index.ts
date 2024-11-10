@@ -1,14 +1,17 @@
-import { fetchSingleHelakuruNews } from './fetchSingleNews'
+import { fetchSingleHelakuruNews } from './fetchSingleNews';
 
-const newsIdsArr:string[] = [
-    '103530',
-    '103531'
-]
+const newsIdsArr: string[] = [
+    '103532',
+    '103533',
+    // Add more IDs as needed
+];
 
-async function fetchMultipleHelakuruNews(newsIdsArr: string[]): Promise<void> {
-    for (const id of newsIdsArr) {
-        await fetchSingleHelakuruNews(id).then(r => 'ERROR: Something went wrong');
+async function fetchMultipleHelakuruNews(newsIds: string[]): Promise<void> {
+    for (const id of newsIds) {
+        await fetchSingleHelakuruNews(id);
     }
 }
 
-fetchMultipleHelakuruNews(newsIdsArr).then(r => 'ERROR: Something went wrong');
+fetchMultipleHelakuruNews(newsIdsArr)
+    .then(() => console.log('Finished fetching all news articles'))
+    .catch((error) => console.error('Error fetching multiple news articles:', error));

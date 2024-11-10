@@ -73,7 +73,7 @@ s0m3m0-esana/
    To start fetching and saving news articles, run the following command:
 
    ```bash
-   node dist/index.js
+   node dist/src/index.js
    ```
 
    Alternatively, if you have `ts-node` installed, you can run it directly:

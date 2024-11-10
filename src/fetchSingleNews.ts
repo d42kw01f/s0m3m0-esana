@@ -1,69 +1,50 @@
-import axios, { AxiosResponse } from 'axios';
-import fs from 'fs/promises';
-import path from 'path';
-import dotenv from 'dotenv';
+import axios from 'axios';
+import { connectToMongo } from '../models/MConnection';
+import { NewsArticle } from '../interfaces/INewsArticle';
+import { ContentBlock } from '../interfaces/IContentBlock';
 
-dotenv.config();
-
-/**
- * Interface representing the structure of the news data.
- * Update this interface based on the actual response structure.
- */
-interface NewsData {
-    id: string;
-    title: string;
-    content: string;
-}
-
-/**
- * Fetches a single news item from Helakuru's API and saves it to a JSON file.
- */
-export async function fetchSingleHelakuruNews(newsId: string) {
-    const url = 'https://helakuru.bhashalanka.com/esana/news/single-news/news-103530.json';
-
-    const headers = {
-        'Host': 'helakuru.bhashalanka.com',
-        'Pro-Status': process.env.PRO_STATUS || '',
-        'Iid': process.env.IID || '',
-        'Uid': process.env.UID || '',
-        'Lan': process.env.LAN || '',
-        'Iid-Token': process.env.IID_TOKEN || '',
-        'Pkg': process.env.PKG || '',
-        'Api-Key': process.env.API_KEY || '',
-        'Platform': process.env.PLATFORM || '',
-        'Ver': process.env.VER || '',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'User-Agent': process.env.USER_AGENT || '',
-    };
-
-    const newsDir = path.join(__dirname, '..', 'news_dir');
-
+export async function fetchSingleHelakuruNews(id: string): Promise<void> {
     try {
-        await fs.mkdir(newsDir, { recursive: true });
-        const response: AxiosResponse<NewsData> = await axios.get(url, { headers });
-        console.log('Status Code:', response.status);
+        const url = `https://helakuru.bhashalanka.com/esana/news/single-news/news-${id}.json`;
+        const response = await axios.get(url);
+        const newsData = response.data;
 
-        const fileName = `${newsId}.json`;
-        const filePath = path.join(newsDir, fileName);
-        const jsonData = JSON.stringify(response.data, null, 2);
+        if (newsData.status.success) {
+            const articleData = newsData.data[0];
+            console.log(articleData);
 
-        await fs.writeFile(filePath, jsonData, 'utf-8');
-        console.log(`Response data has been saved to ${filePath}`);
+            // Extract required fields
+            const newsArticle: NewsArticle = {
+                id: articleData.id,
+                titleEn: articleData.titleEn,
+                contentEn: articleData.contentEn,
+                reactions: articleData.reactions,
+                comments: articleData.comments,
+                published: articleData.published,
+            };
 
-    } catch (error) {
-        // Handle errors appropriately
-        if (axios.isAxiosError(error)) {
-            console.error('Axios Error:', error.message);
-            if (error.response) {
-                console.error('Status Code:', error.response.status);
-                console.error('Response Headers:', error.response.headers);
-                console.error('Response Data:', error.response.data);
-            }
-        } else if (error instanceof Error) {
-            console.error('Error:', error.message);
+            const newsBodyText = newsArticle.contentEn
+                .filter((block: ContentBlock) => block.type === 'text')
+                .map((block: ContentBlock) => block.data)
+                .join(' ');
+
+            const document = {
+                id: newsArticle.id,
+                title: newsArticle.titleEn,
+                content: newsBodyText,
+                reactions: newsArticle.reactions,
+                commentCount: newsArticle.comments,
+                publishedAt: newsArticle.published,
+            };
+
+            const { client, collection } = await connectToMongo();
+            await collection.insertOne(document);
+            console.log(`Inserted article ID ${newsArticle.id} into MongoDB`);
+            await client.close();
         } else {
-            console.error('Unexpected Error:', error);
+            console.error(`Failed to fetch news article with ID ${id}`);
         }
+    } catch (error) {
+        console.error(`Error fetching news article with ID ${id}:`, error);
     }
 }
-

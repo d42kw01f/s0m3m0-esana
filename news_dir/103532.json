@@ -1,0 +1,117 @@
+{
+  "status": {
+    "success": true,
+    "code": 200,
+    "description": "Action Successful",
+    "cached_on": "2024-09-19 19:26:05"
+  },
+  "data": [
+    {
+      "id": 103532,
+      "titleSi": "ඡන්දය භාවිතා කිරීමට පැමිණෙන ඡන්ද දායකයින්ට පොලීසියෙන් දැනුම්දීමක්",
+      "titleEn": "A notice from the police to the voters coming to vote",
+      "contentSi": [
+        {
+          "type": "text",
+          "data": "ඡන්දය පැවැත්වෙන දිනයේදී සිය ඡන්දය භාවිතා කිරීමට පැමිණෙන ඡන්ද දායකයින් සැලකිලිමත් විය යුතු කරුණු කිහිපයක් සම්බන්ධයෙන් පොලීසිය ජනතාවට දැනුම්දීමක් සිදුකර තිබෙනවා.",
+          "options": {
+            "size": "normal",
+            "alingment": "left",
+            "is_quote": false
+          }
+        },
+        {
+          "type": "text",
+          "data": "ඒ අනුව ඡන්දය ප්‍රකාශයට පැමිණෙන පුද්ගලයින් වාහනයකින් පැමිණෙන්නේ නම්, එය මධ්‍යස්ථානයට බාධාවක් නොවන පරිදි ගාල් කර තබා ඡන්දය ප්‍රකාශ කිරීමට යන ලෙසත්, ආබාධිත පුද්ගලයින් රැගෙන එන, කළින් අවසර ලබාගත් වාහනවලට පමණක් ඇතුළුවීමට අවසර ලබාදෙන බවයි පොලිස් මාධ්‍ය ප්‍රකාශක නියෝජ්‍ය පොලිස්පති නීතිඥ නිහාල් තල්දූව සඳහන් කළේ.",
+          "options": {
+            "size": "normal",
+            "alingment": "left",
+            "is_quote": false
+          }
+        },
+        {
+          "type": "text",
+          "data": "එසේම ඡන්දය ප්‍රකාශ කිරීම සඳහා ඇඳගෙන පැමිණෙන ඇඳුම්වල හෝ බෑග්වල නොදැනුවත්ව හෝ තියුණු ආයුධ කොටස් තිබිය හැකි නිසා ඒ සම්බන්ධයෙන් සැලකිලිමත් වී පැමිණීමෙන් අපහසුතාවයන්ට පත්වීමෙන් වැළකීමට හැකි බවද ඔහු සඳහන් කළා.",
+          "options": {
+            "size": "normal",
+            "alingment": "left",
+            "is_quote": false
+          }
+        },
+        {
+          "type": "text",
+          "data": "අධික ලෙස මත්පැන් පානය කර ඡන්ද මධ්‍යස්ථානවලට නොපැමිණෙන ලෙසත්, එසේම ඡංගම දුරකථන ඡන්ද මධ්‍යස්ථානයට රැගෙන යාමට අවස්ථාව ලබා නොදෙන බවත්, යම් හෙයකින් වීඩියෝ ගත කිරීමක් හෝ ඡායාරූප ගත කිරීමක් සිදුකළහොත් ඔවුන්ට එරෙහිව නීතිය ක්‍රියාත්මක කරන බවද පොලිස් මාධ්‍ය ප්‍රකාශකවරයා සඳහන් කළා.",
+          "options": {
+            "size": "normal",
+            "alingment": "left",
+            "is_quote": false
+          }
+        },
+        {
+          "type": "image",
+          "data": "https://helakuru.bhashalanka.com/esana-hit-tracker.png?v=103532"
+        }
+      ],
+      "contentEn": [
+        {
+          "type": "text",
+          "data": "On the day of the election, the voters who come to cast their vote should be aware of some things that the police has informed the people.",
+          "options": {
+            "size": "normal",
+            "alingment": "left",
+            "is_quote": false
+          }
+        },
+        {
+          "type": "text",
+          "data": "Accordingly, if the people coming to vote come in a vehicle, they should leave it parked so that it does not disturb the center and go to vote, and only vehicles carrying disabled persons, who have obtained permission in advance, will be allowed to enter, Police Media Spokesman DIG Advocate Nihal Talduwa said.",
+          "options": {
+            "size": "normal",
+            "alingment": "left",
+            "is_quote": false
+          }
+        },
+        {
+          "type": "text",
+          "data": "Also, he mentioned that the clothes or bags worn for voting may have sharp weapon parts unknowingly or there may be parts of sharp weapons by being careful about it and avoiding inconveniences.",
+          "options": {
+            "size": "normal",
+            "alingment": "left",
+            "is_quote": false
+          }
+        },
+        {
+          "type": "text",
+          "data": "The Police Media Spokesman stated that they should not come to the polling stations after drinking too much alcohol, and they will not be given the opportunity to take cellphones to the polling station.",
+          "options": {
+            "size": "normal",
+            "alingment": "left",
+            "is_quote": false
+          }
+        },
+        {
+          "type": "image",
+          "data": "https://helakuru.bhashalanka.com/esana-hit-tracker.png?v=103532"
+        }
+      ],
+      "category": 2,
+      "thumb": "https://helakuru.sgp1.cdn.digitaloceanspaces.com/esana/images/lib/nihal-thalduwa-election.jpg",
+      "cover": "https://helakuru.sgp1.cdn.digitaloceanspaces.com/esana/images/lib/nihal-thalduwa-election.jpg",
+      "reactions": {
+        "like": 21,
+        "love": 27,
+        "haha": 2,
+        "wow": 1,
+        "sad": 0,
+        "angry": 2
+      },
+      "comments": 166,
+      "commentCounts": {
+        "sin": 165,
+        "eng": 1
+      },
+      "published": "2024-09-19 14:08:00",
+      "share_url": "https://www.helakuru.lk/esana/p/103532/"
+    }
+  ]
+}
