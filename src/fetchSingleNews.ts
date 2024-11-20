@@ -36,7 +36,7 @@ export async function fetchSingleHelakuruNews(id: string): Promise<void> {
                 scraped: getCurrentDateTimeInPythonFormat(),
             };
 
-            logger.info(`[INFO] Fetched data: ${JSON.stringify(newsArticle)}`);
+            logger.info(`[INFO] Fetched data: ${JSON.stringify(newsArticle.id)}`);
 
             const newsBodyTextEn = newsArticle.contentEn
                 .filter((block: ContentBlock) => block.type === 'text')

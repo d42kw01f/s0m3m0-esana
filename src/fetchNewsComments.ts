@@ -34,7 +34,7 @@ export async function fetchNewsComments(id: string): Promise<Comments[]> {
                         commentText: comment.comment || '',
                         commentReaction: comment.reactions || {},
                         commentReplyCount: Array.isArray(comment.replies) ? comment.replies.length : 0,
-                        commentPublishedAt: new Date(comment.createdOn),
+                        publishedAt: comment.createdOn,
                     };
                     commentBlock.push(commentMain);
                 }
